@@ -1,0 +1,66 @@
+:root {
+	--app-white: rgb(225, 225, 225);
+	--app-black: rgb(0, 0, 0);
+	--app-content: rgb(30, 30, 30);
+}
+
+form {
+	width: 100%;
+	height: 144px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+	height: 48px;
+	width: 100%;
+	max-width: 400px;
+	min-width: 144px;
+	border-radius: 4px;
+	padding: 0 12px;
+	letter-spacing: .5px;
+	font-weight: 500;
+	color: var(--app-content);
+	border: 1px solid var(--app-white);
+}
+
+.tree {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 50%;
+	color: var(--app-black);
+	background-color: var(--app-white);
+	border: 1px solid var(--app-black);
+}
+
+.node {
+	z-index: 9;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.node .nodeInner {
+	z-index: 9;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--app-white);
+	border: 1px solid var(--app-black);
+	border-radius: 50%;
+}

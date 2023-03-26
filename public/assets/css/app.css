@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	direction: ltr;
+	overflow: hidden;
+	font-weight: 400;
+	font-size: 1.4rem;
+	user-select: none;
+	box-sizing: border-box;
+	user-select: none;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(250, 250, 250);
+}
+
+image {
+	pointer-events: none;
+}
+
+input,
+button,
+textarea {
+	outline: none !important;
+	border-width: 0;
+}
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+
+button:disabled {
+	opacity: 0.6;
+}
+
+a {
+	text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
